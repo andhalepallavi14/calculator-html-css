@@ -7,9 +7,9 @@
 
     <style>
         .container{
-            height: 500px;
+            height: 400px;
             width: 250px;
-            background-color: antiquewhite;
+           background-color: aliceblue;
             margin: 40px auto;
             border-radius: -10px;
             padding: 20px;
@@ -19,14 +19,14 @@
         }
 
         .inputbox{
-            background-color: rgb(233, 211, 211);
+          
             margin: 10px 5px;
             padding: 10px 20px;
             text-align: right;
             width: 200px;
             font-size: 20px;
             margin-bottom: 90px;
-
+             background-color: rgb(248, 250, 252);
             border: none;
             cursor: pointer;
         }
@@ -41,6 +41,7 @@
             width: 15px;
             height: 15px;
             display: inline;
+            opacity: 1.0;
             color: azure;
         
         }
@@ -52,6 +53,42 @@
             position: absolute;
             right: 0px;
             top: 170px;
+        }
+
+        .btn-container{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 220px;
+            position: fixed;
+           
+        }
+        .btn{
+            font-size: 20px;
+            width: 50px;
+            text-align: center;
+            padding: 4px 2px;
+            margin: 6px;
+            border-radius: 65%;
+            border: none;
+            cursor: pointer;
+        }
+        .btn1{
+            color: green;
+        }
+        .btn2{
+            color: tomato;
+        }
+        .equal{
+            background-color: green;
+            color: white;
+
+        }
+        .btn:hover{
+            font-size: 15px;
+            transform: 4s;
         }
     </style>
 </head>
@@ -68,11 +105,32 @@
 
              <div class="btn-container">
 
-                <button class="btn"> C</button>
+                <button class="btn btn2"> C</button>
+                <button class="btn"> 7</button>
+                <button class="btn"> 4</button>
+                <button class="btn"> 1</button>
+                <button class="btn"> +/-</button>
+                
 
+                <button class="btn btn1">()</button>
+                <button class="btn"> 8</button>
+                <button class="btn"> 5</button>
+                <button class="btn"> 2</button>
+                <button class="btn"> 0/-</button>
+ 
+                <button class="btn btn1"> %</button>
+                <button class="btn"> 9</button>
+                <button class="btn"> 6</button>
+                <button class="btn">3</button>
+                <button class="btn"> .</button>
+
+                <button class="btn btn1">|</button>
+                <button class="btn btn1"> *</button>
+                <button class="btn btn1">-</button>
+                <button class="btn btn1">+</button>
+                <button class="btn equal">=</button>
 
              </div>
-
     </div>
 </body>
 </html>
